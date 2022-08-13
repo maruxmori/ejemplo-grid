@@ -29,6 +29,7 @@ body{
     "uno    dos     tres"
     "cinco  dos     tres"
     "cinco  cuatro  cuatro"
+    "boos boos boos"
     "footer footer footer"
     ;
     grid-template-columns: 1fr 50vw 20vw;
@@ -38,7 +39,7 @@ body{
 la tercera el repeat hace que tengan la misma medida las 2 filas siguientes
 la de "uno dos tres" y "uno cuatro cuatro"
 la ultima de 100px afecta al footer */    
-    grid-template-rows: 20vh 80vh repeat(3, 200px) 10rem;
+    grid-template-rows: 20vh 80vh repeat(3, 200px) 1fr 10rem;
     gap: 2vw;
 }
 
@@ -90,7 +91,8 @@ para que ocupe hasta el final esa fila 2 (donde sería el inicio de la 3)
     */
     grid-row: 2;
     /*puedo usar*/
-    place-self: center;
+    width: 100%;
+    background-color: white;
 }
 
 .header a{
@@ -226,6 +228,28 @@ footer{
     color: #f9f9f9;
 }
 
+/*Clases copiadas desde Bootstrap, para personalizar estilos*/
+.container{
+    grid-area: boos;
+    width: 100vw;
+}
+.navbar-brand img{
+    width: 50px;
+
+}
+
+.navbar-collapse{
+    background: #f8f9fa;
+}
+.navbar-toggler{
+    border: none;
+}
+
+.fa-bars{
+    color: #325354;
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 720px) {
 
     /*para cambiar el orden de los elementos en algun breakpoint
@@ -254,6 +278,7 @@ footer{
         "uno dos"
         "cinco tres"
         "cinco cuatro"
+        "boos boos"
         "footer footer"
         ;
     }
@@ -280,6 +305,7 @@ footer{
         "uno dos tres"
         "cinco dos tres"
         "cinco cuatro tres"
+        "boos boos"
         "footer footer footer"
         ;
     }

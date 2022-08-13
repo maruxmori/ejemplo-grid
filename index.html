@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Ejemplo de Layout con Grid y Flexbox</title>
   </head>
@@ -26,12 +26,33 @@
         </a>
 
         <span class="header--tagline">Algún tagline de marca</span>
-
+    <!--
         <nav class="header--nav">
           <ul class="navigation">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./productos.html">Productos</a></li>
           </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-light header--nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+            src="https://cdn-icons-png.flaticon.com/512/621/621715.png"
+            alt=""/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="">Galería</a>
+                <a class="nav-link" href="">Nosotros</a>
+                <a class="nav-link" href="">Contacto</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -41,8 +62,6 @@
             Plantitas <br />
             <strong> & responsive</strong>
           </h1>
-
-          <p>Ejemplo grabado de grid y git</p>
         </div>
       </section>
 
@@ -70,6 +89,22 @@
         <img src="./img/plantita-4.jpeg" alt="" />
       </article>
 
+
+      <section class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <h2>Card Bootstrap</h2>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <h2>Card Bootstrap</h2>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <h2>Card Bootstrap</h2>
+          </div>
+        </div>
+
+      </section>
+
       <footer>
         <p>Nuestras redes</p>
         <ul class="redes">
@@ -86,6 +121,7 @@
       </footer>
       
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   </body>
 </html>
